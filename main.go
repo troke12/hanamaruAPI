@@ -49,7 +49,7 @@ func get_content(c *gin.Context) {
 
 func main() {
     router := gin.Default()
-    router.GET("/blogh", get_content)
-    router.Run(":4343")
+    router.GET("/blog", get_content)
+    router.Run("0.0.0.0:4343")
     //get_content()
 }
